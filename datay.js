@@ -1,0 +1,66 @@
+module.exports =function(){
+   return{
+
+              authors:[
+                            {id:1,name:'fazıl',age:25,favoriteBook:'nerdesin aşkım',imgUrl:'1.jpg'},
+                            {id:2,name:'Necip',age:25,favoriteBook:'nerdesin aşkım',imgUrl:'2.jpg'},
+                            {id:3,name:'Nazım',age:25,favoriteBook:'nerdesin aşkım',imgUrl:'3.jpg'},
+                            {id:4,name:'platon',age:25,favoriteBook:'nerdesin aşkım',imgUrl:'4.jpg'},
+                            {id:5,name:'stephen',age:25,favoriteBook:'nerdesin aşkım',imgUrl:'5.jpg'},
+              ],
+                
+                 books:[
+                            {id:1,name:'soğuk fırtına',authors:'fazıl',catagories:'oyna yavrum oyna'},
+                            {id:2,name:'soğuk fırtına',authors:'fazıl',catagories:'oyna yavrum oyna'},
+                            {id:3,name:'soğuk fırtına',authors:'fazıl',catagories:'oyna yavrum oyna'},
+                            {id:4,name:'soğuk fırtına',authors:'fazıl',catagories:'oyna yavrum oyna'},
+                            {id:5,name:'soğuk fırtına',authors:'fazıl',catagories:'oyna yavrum oyna'},
+                            {id:6,name:'soğuk fırtına',authors:'fazıl',catagories:'oyna yavrum oyna'},
+                            {id:7,name:'soğuk fırtına',authors:'fazıl',catagories:'oyna yavrum oyna'},
+                            {id:8,name:'soğuk fırtına',authors:'fazıl',catagories:'oyna yavrum oyna'},
+                            {id:9,name:'soğuk fırtına',authors:'fazıl',catagories:'oyna yavrum oyna'},
+                            {id:10,name:'soğuk fırtına',authors:'fazıl',catagories:'oyna yavrum oyna'},
+                            {id:11,name:'soğuk fırtına',authors:'fazıl',catagories:'oyna yavrum oyna'},
+                            {id:13,name:'soğuk fırtına',authors:'fazıl',catagories:'oyna yavrum oyna'},
+                            {id:14,name:'soğuk fırtına',authors:'fazıl',catagories:'oyna yavrum oyna'},
+                            {id:15,name:'soğuk fırtına',authors:'fazıl',catagories:'oyna yavrum oyna'},
+                            {id:16,name:'soğuk fırtına',authors:'fazıl',catagories:'oyna yavrum oyna'},
+                            {id:17,name:'soğuk fırtına',authors:'fazıl',catagories:'oyna yavrum oyna'},
+                            {id:18,name:'soğuk fırtına',authors:'fazıl',catagories:'oyna yavrum oyna'},
+                            {id:19,name:'soğuk fırtına',authors:'fazıl',catagories:'oyna yavrum oyna'},
+                            {id:20,name:'soğuk fırtına',authors:'fazıl',catagories:'oyna yavrum oyna'},
+                            {id:22,name:'soğuk fırtına',authors:'fazıl',catagories:'oyna yavrum oyna'},
+                            {id:23,name:'soğuk fırtına',authors:'fazıl',catagories:'oyna yavrum oyna'},
+                            {id:24,name:'soğuk fırtına',authors:'fazıl',catagories:'oyna yavrum oyna'},
+                            {id:25,name:'soğuk fırtına',authors:'fazıl',catagories:'oyna yavrum oyna'},
+                            {id:26,name:'soğuk fırtına',authors:'fazıl',catagories:'oyna yavrum oyna'},
+                            {id:27,name:'soğuk fırtına',authors:'fazıl',catagories:'oyna yavrum oyna'},
+                            {id:28,name:'soğuk fırtına',authors:'fazıl',catagories:'oyna yavrum oyna'},
+                            {id:29,name:'soğuk fırtına',authors:'fazıl',catagories:'oyna yavrum oyna'},
+                            {id:30,name:'soğuk fırtına',authors:'fazıl',catagories:'oyna yavrum oyna'},
+                            {id:31,name:'soğuk fırtına',authors:'fazıl',catagories:'oyna yavrum oyna'},
+                            {id:32,name:'soğuk fırtına',authors:'fazıl',catagories:'oyna yavrum oyna'},
+                            {id:33,name:'soğuk fırtına',authors:'fazıl',catagories:'oyna yavrum oyna'},
+                            {id:34,name:'soğuk fırtına',authors:'fazıl',catagories:'oyna yavrum oyna'},
+                            {id:35,name:'soğuk fırtına',authors:'fazıl',catagories:'oyna yavrum oyna'},
+                            {id:36,name:'soğuk fırtına',authors:'fazıl',catagories:'oyna yavrum oyna'},
+                            {id:37,name:'soğuk fırtına',authors:'fazıl',catagories:'oyna yavrum oyna'},
+                            {id:38,name:'soğuk fırtına',authors:'fazıl',catagories:'oyna yavrum oyna'},
+                            {id:39,name:'soğuk fırtına',authors:'fazıl',catagories:'oyna yavrum oyna'},
+                            {id:40,name:'soğuk fırtına',authors:'fazıl',catagories:'oyna yavrum oyna'},
+                            {id:41,name:'soğuk fırtına',authors:'fazıl',catagories:'oyna yavrum oyna'},
+                            {id:42,name:'soğuk fırtına',authors:'fazıl',catagories:'oyna yavrum oyna'},
+                            {id:43,name:'soğuk fırtına',authors:'fazıl',catagories:'oyna yavrum oyna'},
+                            {id:44,name:'soğuk fırtına',authors:'fazıl',catagories:'oyna yavrum oyna'},
+                            {id:45,name:'soğuk fırtına',authors:'fazıl',catagories:'oyna yavrum oyna'},
+                            {id:46,name:'soğuk fırtına',authors:'fazıl',catagories:'oyna yavrum oyna'},
+                            {id:47,name:'soğuk fırtına',authors:'fazıl',catagories:'oyna yavrum oyna'},
+                            {id:48,name:'soğuk fırtına',authors:'fazıl',catagories:'oyna yavrum oyna'},
+                            {id:49,name:'soğuk fırtına',authors:'fazıl',catagories:'oyna yavrum oyna'},
+                            {id:50,name:'soğuk fırtına',authors:'fazıl',catagories:'oyna yavrum oyna'}
+              ],
+              users:[
+                            {id:1,email:'sitkiyildirim100@gmail.com',password:'123456'}
+              ]
+   }   
+}

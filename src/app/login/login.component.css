@@ -1,0 +1,63 @@
+.personClass{
+
+
+              width: 98.5%;
+              height: 615px;
+              margin-left:10px;
+              margin-right:10px;
+              margin-bottom:10px;
+              margin-top:10px;
+
+
+          
+               background-repeat:no-repeat;
+               background-position:center center;
+               background-attachment: fixed;
+               background-size: cover;
+               
+
+               border:5px solid rgb(23, 95, 67);
+               border-radius:  5px;
+
+}
+
+#hero video{
+ height:100vh;
+ width:100%;
+ background-position: absolute;
+ z-index: 10;
+ object-fit: cover;
+}
+
+#hero{
+ margin-left: 5px;
+ margin-right: 5px;
+ margin-top: 5px;
+ border: 5px double rgb(16, 14, 129);
+ border-radius:5px;
+}
+
+#hero .content {
+ height: 100%;
+ width: 100%;
+ z-index: 20;
+ position: absolute;
+ top: 0;
+ left: 0;
+
+ display: flex;
+ 
+
+
+ color: white;
+}
+
+.form-control {
+ border-top: 1px solid rgb(33, 24, 44);
+  border-radius: 50px;
+}
+
+button {
+ border-top: 1px solid ;
+  border-radius: 50px;
+}

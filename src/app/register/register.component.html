@@ -1,0 +1,43 @@
+<div class="container bg-warning mt-5 border border-danger border-5 rounded-pill">
+              <div class="row p-5">
+                            <div class="col-md-3"></div>
+                            <div class="col-md-6 mt-5">
+                                          <form [formGroup]="usersRegisterForm" (ngSubmit)="submitedUsers()">
+                                                        <div class="from-group">
+                                                                      <label > &nbsp;&nbsp;  Name:</label>
+                                                                      <input type="text" class="form-control border border-warning border-2 rounded-pill"
+                                                                       name="name"  formControlName="name">
+                                                        </div>
+                                                        <div class="from-group">
+                                                                      <label >&nbsp;&nbsp; Surname:</label>
+                                                                      <input type="text" class="form-control border border-warning border-2 rounded-pill"
+                                                                      name="surname"  formControlName="surname">
+                                                        </div>
+                                                        <div class="from-group">
+                                                                      <label >&nbsp;&nbsp; Email:</label>
+                                                                      <input type="email" class="form-control border border-warning border-2 rounded-pill"
+                                                                      name="email"  formControlName="email">
+                                                        </div>
+                                                        <div class="from-group">
+                                                                      <label >&nbsp;&nbsp; Password:</label>
+                                                                      <input type="text" class="form-control border border-warning border-2 rounded-pill"
+                                                                      password="name"  formControlName="password">
+                                                        </div>
+                                                        <button type="submit" class="btn btn-outline-info mt-2  rounded-pill mr-2"
+                                                        [disabled]="clicksubmited && usersRegisterForm.invalid"
+                                                        [class.bg-secondary]="clicksubmited && usersRegisterForm.invalid">Submit</button>
+                                                        <button routerLink='/login' class="btn btn-outline-danger m-2 rounded-pill mt-3">Login</button>
+                                          </form>
+                            </div>
+                            <div class=col-md-3>
+                                          <div class="alert alert-danger rounded-pill mt-5" *ngIf="usersRegisterForm.invalid && clicksubmited">
+                                                       <ul>
+                                                                     <li *ngFor="let err of error">{{err}}</li>
+                                                       </ul>
+                                          </div>
+
+                                          <div *ngIf="succsesfuly" class="alert alert-primary rounded-pill mt-5"><p>Registration Successful</p></div>
+                                          
+                            </div>
+              </div>
+</div>

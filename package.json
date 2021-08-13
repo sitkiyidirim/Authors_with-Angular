@@ -6,7 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "json":"json-server datay.js -p 5000"
   },
   "private": true,
   "dependencies": {
@@ -18,6 +19,7 @@
     "@angular/platform-browser": "~12.0.5",
     "@angular/platform-browser-dynamic": "~12.0.5",
     "@angular/router": "~12.0.5",
+    "bootstrap": "^5.1.0",
     "rxjs": "~6.6.0",
     "tslib": "^2.1.0",
     "zone.js": "~0.11.4"
@@ -34,6 +36,7 @@
     "karma-coverage": "~2.0.3",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "^1.5.0",
-    "typescript": "~4.2.3"
+    "typescript": "~4.2.3",
+    "json-server": "^0.16.3"
   }
 }
