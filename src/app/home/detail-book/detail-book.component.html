@@ -1,0 +1,62 @@
+
+
+<div class="container pt-100 mt-5 ">
+
+              <div class="row">
+
+
+                            <div class="col-12">
+                                          <div class="row">
+                                                        <div class="col-3"></div>
+                                                        <div class="col-8">
+
+                                                                      <ng-container *ngIf="books">
+                                                                     
+                                                                                    <div class="card mb-3 m-2" style="height: 500px;width:395px;">
+                                                                                                  <img src="../../../assets/img/{{books.imgUrl}}"
+                                                                                                                alt="p.name">
+                                                                                                  <div class="card-body">
+              
+                                                                                                                <h5 class="card-title text-danger">
+                                                                                                                        <b>{{books.name}}</b>  
+                                                                                                               </h5>
+                                                                                                                <h4
+                                                                                                                              class="card-title text-secondary">
+                                                                                                                              <a>
+                                                                                                                                            {{books.authors}}
+                                                                                                                              </a>
+                                                                                                                </h4>
+                                                                                                                <small
+                                                                                                                              class="text-muted">
+                                                                                                                              <i
+                                                                                                                                            class="fas fa-lira-sign"></i>
+                                                                                                                              {{books.catagories}}
+                                                                                                                </small>
+              
+                                                                                                  </div>
+                                                                                                  <div
+                                                                                                                class="card-footer text-center">
+                                                                                                                <button
+                                                                                                                              class="btn-outline-danger btn-sm m-1">Add
+                                                                                                                              To
+                                                                                                                              Cart</button>
+                                                                                                  </div>
+                                                                                    </div>
+              
+                                                                      </ng-container>
+
+                                                        </div>
+
+                                                        <div class="col-4"></div>
+
+                                          </div>
+
+                                          <div class="row" *ngIf="books">
+                                                        <app-detail-child [getbook]="books"></app-detail-child>
+                                          </div>
+                            </div>
+
+              </div>
+
+</div>
+
