@@ -1,0 +1,50 @@
+<div class="container pt-100 mt-5 ">
+
+              <div class="row">
+
+
+                            <div class="col-12">
+                                          <div class="row">
+                                                        <ng-container *ngFor="let p of books">
+                                                                     
+                                                                      <div class="card mb-3 m-2" style="height: 500px;width:195px;">
+                                                                                    <img src="../../../assets/img/{{p.imgUrl}}"
+                                                                                                  alt="p.name">
+                                                                                    <div class="card-body">
+
+                                                                                                  <h5 class="card-title text-danger">
+                                                                                                          <b>{{p.name}}</b>  
+                                                                                                 </h5>
+                                                                                                  <h4
+                                                                                                                class="card-title text-secondary">
+                                                                                                                <a>
+                                                                                                                              {{p.authors}}
+                                                                                                                </a>
+                                                                                                  </h4>
+                                                                                                  <small
+                                                                                                                class="text-muted">
+                                                                                                                <i
+                                                                                                                              class="fas fa-lira-sign"></i>
+                                                                                                                {{p.catagories}}
+                                                                                                  </small>
+
+                                                                                    </div>
+                                                                                    <div
+                                                                                                  class="card-footer text-center">
+                                                                                                  <button
+                                                                                                                class="btn-outline-danger btn-sm m-1">Details</button>
+                                                                                                  <button
+                                                                                                                class="btn-outline-danger btn-sm m-1">Add
+                                                                                                                To
+                                                                                                                Cart</button>
+                                                                                    </div>
+                                                                      </div>
+
+                                                        </ng-container>
+
+                                          </div>
+                            </div>
+
+              </div>
+
+</div>

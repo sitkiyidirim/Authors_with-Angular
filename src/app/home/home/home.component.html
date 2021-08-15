@@ -24,30 +24,37 @@
 <div class="container">
               <div class="row">
                             <div class="col-md-12">
-                                          <ul class="nav nav-tabs my-4">
+                                          <ul class="nav nav-tabs my-2">
                                                         <ul class="nav-item ">
                                                                       <a  class="nav-link active" routerLinkActive="active"
-                                                                      [routerLinkActiveOptions]="{exact: true}">Home</a>
+                                                                      [routerLinkActiveOptions]="{exact: true}">Library</a>
                                                         </ul>
                                                         <ul class="nav-item">
-                                                                      <a  class="nav-link" routerLinkActive="active">Products</a>
+                                                                      <a  class="nav-link" routerLinkActive="active">Books-repository</a>
                                                         </ul>
                                                         <ul class="nav-item">
-                                                                      <a class="nav-link" routerLinkActive="active">users</a>
+                                                                      <a class="nav-link" routerLinkActive="active">Outhers</a>
                                                         </ul>
                                                         <ul class="nav-item">
-                                                               <a  class="nav-link" routerLinkActive="active">admin</a>
+                                                               <a  class="nav-link" routerLinkActive="active">Librarian</a>
                                                  </ul>
                                           </ul>
                             </div>
 
               </div>
               <div class="row">
-                            <div class="col-md-1">
-                                          merhablar
+                            <div class="col-2 ">
+                              <div class="list-group my-2">
+                                      <button type="button" class="list-group-item  bg-danger" disabled >books-outhers</button>
+                                      <button type="button" class="list-group-item list-group-item-action bg-warning"
+                                      *ngFor="let item of outhers"><h5><div style="height: 30px;width: 30px;" class="rounded-pill">
+                                        <img  style="height: 40px;width: 40px;" class="rounded-pill" src="../../../assets/outher-img/{{item.imgUrl}}"
+                                        alt="p.name"> </div> {{item.name}}</h5></button>
+                                      <button type="button" class="list-group-item  bg-danger" >All books</button>
+                              </div>
                             </div>
-                            <div class="col-md-11" style="overflow:scroll; width:100%;height:610px;">
-                                         <div style="height: 900px;width: 100px"> </div>
+                            <div class="col-10 " style="overflow:scroll;height:610px;">
+                              <app-booksall></app-booksall>
                             </div>
               </div>
 </div>
