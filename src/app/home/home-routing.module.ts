@@ -16,7 +16,7 @@ const routes: Routes = [
           {path:'booksall', component:BooksallComponent},
           {path:'outherbooks/:name',component:OutherBooksComponent},
           {path:'detailsbook/:id',component:DetailBookComponent},
-          {path:'librarian', canActivate:[LibrarianLoginControl], component:LibrarianComponent},
+          {path:'librarian', component:LibrarianComponent},
           {path:'librarilogin',component:LibrarianLoginComponent}
      ]
     }

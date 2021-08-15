@@ -14,6 +14,7 @@ import { LibrarianLoginComponent } from './librarian-login/librarian-login.compo
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LibrarianLoginControl } from './librarian-login-control';
 import { RouterModule } from '@angular/router';
+import { LibraryService } from './librarian/library.service';
 @NgModule({
   declarations: [
     HomeComponent,
@@ -32,7 +33,7 @@ import { RouterModule } from '@angular/router';
     ReactiveFormsModule,
     HomeRoutingModule
   ],
-  providers: [BoksgetService,LibrarianLoginControl],
+  providers: [BoksgetService,LibrarianLoginControl,LibraryService],
   exports: [HomeComponent]
 })
 export class HomeModule { }
