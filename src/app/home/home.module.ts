@@ -9,6 +9,11 @@ import { HttpClientModule } from '@angular/common/http';
 import { BoksgetService } from './booksall/boksget.service';
 import { DetailBookComponent } from './detail-book/detail-book.component';
 import { DetailChildComponent } from './detail-child/detail-child.component';
+import { LibrarianComponent } from './librarian/librarian.component';
+import { LibrarianLoginComponent } from './librarian-login/librarian-login.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { LibrarianLoginControl } from './librarian-login-control';
+import { RouterModule } from '@angular/router';
 @NgModule({
   declarations: [
     HomeComponent,
@@ -16,13 +21,18 @@ import { DetailChildComponent } from './detail-child/detail-child.component';
     OutherBooksComponent,
     DetailBookComponent,
     DetailChildComponent,
+    LibrarianComponent,
+    LibrarianLoginComponent,
   ],
   imports: [
     CommonModule,
     HttpClientModule,
+    RouterModule,
+    FormsModule,
+    ReactiveFormsModule,
     HomeRoutingModule
   ],
-  providers: [BoksgetService],
+  providers: [BoksgetService,LibrarianLoginControl],
   exports: [HomeComponent]
 })
 export class HomeModule { }

@@ -1,0 +1,12 @@
+<div class="m-5 -p-3 col-8">
+              
+              <div class="form-group">
+                            <label ><b>Librarian password: </b></label>
+                            <input type="text" class="form-control"  [formControl]="password">
+              </div>
+              <button (click)="loginClick()" class="btn btn-outline-danger m-2 p-2">Login</button>
+
+              <div class="alert alert-danger m-2 p-2" *ngIf="errorC">
+                            password hatalı
+              </div>
+</div>
