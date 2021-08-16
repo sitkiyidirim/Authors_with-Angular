@@ -17,7 +17,8 @@ const routes: Routes = [
           {path:'outherbooks/:name',component:OutherBooksComponent},
           {path:'detailsbook/:id',component:DetailBookComponent},
           {path:'librarian', component:LibrarianComponent},
-          {path:'librarilogin',component:LibrarianLoginComponent}
+          {path:'librarilogin',component:LibrarianLoginComponent},
+          {path:'repositor', loadChildren:()=>import('./repository/repository.module').then(m=>m.RepositoryModule)}
      ]
     }
   
