@@ -16,9 +16,10 @@ const routes: Routes = [
           {path:'booksall', component:BooksallComponent},
           {path:'outherbooks/:name',component:OutherBooksComponent},
           {path:'detailsbook/:id',component:DetailBookComponent},
-          {path:'librarian', component:LibrarianComponent},
+          {path:'librarian', canActivate:[LibrarianLoginControl], component:LibrarianComponent},
           {path:'librarilogin',component:LibrarianLoginComponent},
-          {path:'repositor', loadChildren:()=>import('./repository/repository.module').then(m=>m.RepositoryModule)}
+          {path:'repositor', loadChildren:()=>import('./repository/repository.module').then(m=>m.RepositoryModule)},
+          {path:'outhers', loadChildren:()=>import('./outhers/outhers.module').then(m=>m.OuthersModule)}
      ]
     }
   
