@@ -7,7 +7,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "json":"json-server datay.js -p 5000"
+    "json": "json-server datay.js -p 5000",
+    "compodoc": "npx compodoc -p tsconfig.doc.json"
   },
   "private": true,
   "dependencies": {
@@ -28,15 +29,16 @@
     "@angular-devkit/build-angular": "~12.0.5",
     "@angular/cli": "~12.0.5",
     "@angular/compiler-cli": "~12.0.5",
+    "@compodoc/compodoc": "^1.1.14",
     "@types/jasmine": "~3.6.0",
     "@types/node": "^12.11.1",
     "jasmine-core": "~3.7.0",
+    "json-server": "^0.16.3",
     "karma": "~6.3.0",
     "karma-chrome-launcher": "~3.1.0",
     "karma-coverage": "~2.0.3",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "^1.5.0",
-    "typescript": "~4.2.3",
-    "json-server": "^0.16.3"
+    "typescript": "~4.2.3"
   }
 }
